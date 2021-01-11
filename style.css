@@ -12,6 +12,25 @@
     min-height: 225px;
     border:1px solid white
 }
+
+
+.test-2{
+    background-image: url(http://helixsmartlabs.in/hsl-image/lift.png);
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.test-3{
+    background-image: url(http://helixsmartlabs.in/hsl-image/assistant.png);
+    background-repeat: no-repeat;
+    background-size: contain
+}
+.text-4{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
 @media only screen and (max-width: 600px) {
     .testimonial {
         width:100%;
