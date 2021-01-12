@@ -100,7 +100,7 @@ body{
 
     .comma-bg-btm {
         float: right;
-        transform: rotate(180deg) translateY(-295px);
+        transform: rotate(180deg) translateY(-15px);
     }
     .test-4{
         display: none;
@@ -113,12 +113,13 @@ body{
         margin-top:-60px;
     }
     .testimonial-card-body{
-        padding-top:7%;
+        padding-top:10%;
+        padding-left:50px;
         margin-top:0px;
         height:100%;
     }
     .testimonial-left .testimonial-card-body {
-        padding-top: 80%;
+        padding-top: 60%;
         width: 100%;
     }
 }
