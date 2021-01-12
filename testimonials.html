@@ -25,34 +25,102 @@
             width: 100%;
             height: 100%;
         }
+
+        .user-reviews {
+            margin-left: 110px;
+        }
+
+        .user-reviews div {
+            background-color: #1F1F1F;
+        }
+
+        .reviews-cont {
+            background-color: #141414;
+        }
     </style>
 </head>
 
 <body>
-    <section style="width:100%">
-        <div class="container">
-            <h4 class="text-center text-capitalize pt-5">Hear it from the users</h4>
-            <hr class="w-25 mx-auto" style="border-color: black;margin-top:-5px;max-width:100px;">
-            <h1 class="text-center text-capitalize">Product testimonials</h1>
-        </div>
-        <div class="row mb-5 product-testimonials">
-            <div class="col-lg-6 col-md-6 col-sm-12 testimonial-left">
-                <img src="http://helixsmartlabs.in/hsl-image/a.png" class="testimonial-image-1" alt="Card image">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 mx-auto bg-primary testimonial test-2">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 mx-auto bg-success testimonial test-3">
+    <section class="carousel w-100" aria-label="Gallery">
+        <div class="container-fluid">
+            <div class="row reviews-cont">
+                <div class="col-lg-5 col-md-5 col-sm-12 p-4 user-reviews" style="height:540px">
+                    <div class="w-100" style="height:100%">
+                        <img src="./comma@2x.png" class="comma-bg" alt="">
+                        <div class="content text-light px-5 py-4 text-md">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quod reprehenderit.
+                                Fugit, qui dolor? Modi, sunt hic. Quia at nam ratione accusamus doloremque culpa quidem
+                                molestiae, explicabo tenetur? Molestias, repellat?</h4>
+                        </div>
+                        <img src="./comma@2x.png" class="comma-bg-btm" alt="">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 bg-danger testimonial test-4">
+                <div class="col-lg-5 col-md-5 col-sm-12 p-4 user-reviews" style="height:540px">
+                    <div class="w-100" style="height:100%">
+                        <img src="./comma@2x.png" class="comma-bg" alt="">
+                        <div class="content text-light px-5 py-4 text-md">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quod reprehenderit.
+                                Fugit, qui dolor? Modi, sunt hic. Quia at nam ratione accusamus doloremque culpa quidem
+                                molestiae, explicabo tenetur? Molestias, repellat?</h4>
+                        </div>
+                        <img src="./comma@2x.png" class="comma-bg-btm" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section style="width:100%;" class=" mb-5">
+        <div class="container">
+            <h4 class="text-center text-capitalize pt-5 font-weight-light">Hear it from the users</h4>
+            <hr class="w-25 mx-auto" style="border-color: black;margin-top:-5px;max-width:60px;border-width:2px;">
+            <h1 class="text-center text-capitalize" style="font-size:5vw;">Product testimonials</h1>
+        </div>
+        <div class="row mb-5 product-testimonials">
+            <div class="col-lg-6 col-md-6 col-sm-12 testimonial-left card text-light" style="height:592px;">
+                <div class="card-body testimonial-card-body">
+                            <h3 class="card-title">Air Touch</h3>
+                            <h3 class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</h3>
+                            <a href="#" class="text-light w-full"><h4>Explore</h4></a>
+                        </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mx-auto testimonial test-2 card text-light">
+                        <div class="card-body testimonial-card-body">
+                            <h3 class="card-title">Air Touch</h3>
+                            <h3 class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</h3>
+                            <a href="#" class="text-light w-full"><h4>Explore</h4></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mx-auto testimonial test-3 card text-light">
+                        <div class="card-body testimonial-card-body">
+                            <h3 class="card-title">Air Touch</h3>
+                            <h3 class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</h3>
+                            <a href="#" class="text-light w-full"><h4>Explore</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 testimonial test-4 card text-light">
+                        <div class="card-body testimonial-card-body">
+                            <h3 class="card-title">Air Touch</h3>
+                            <h3 class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</h3>
+                            <a href="#" class="text-light w-full"><h4>Explore</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="position: absolute; bottom:-1000px; height:100px; width:100%;"></div>
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
