@@ -20,6 +20,10 @@
             font-family: 'Josefin Sans', sans-serif;
         }
 
+        .reviews-cont{
+            min-height: 550px;
+        }
+
         /* Make the image fully responsive */
         .carousel-inner img {
             width: 100%;
@@ -27,7 +31,7 @@
         }
 
         .user-reviews {
-            margin-left: 110px;
+            margin-left: 6%;
         }
 
         .user-reviews div {
@@ -43,11 +47,12 @@
 <body>
     <section class="carousel w-100" aria-label="Gallery">
         <div class="">
-            <div class="reviews-cont" style="display: flex;overflow-x:auto">
+            <div class="reviews-cont mb-5" style="display: flex !important;overflow-x:scroll;overflow-y:hidden;">
+                <div class="btn-prev text-center">d</div>
                 <div class="col-lg-5 col-md-12 col-sm-12 p-4 user-reviews" style="height:540px">
                     <div class="w-100" style="height:100%">
                         <img src="./comma@2x.png" class="comma-bg" alt="">
-                        <div class="content text-light px-5 py-4 text-md">
+                        <div class="content text-light text-md">
                             <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quod reprehenderit.
                                 Fugit, qui dolor? Modi, sunt hic. Quia at nam ratione accusamus doloremque culpa quidem
                                 molestiae, explicabo tenetur? Molestias, repellat?</h4>
@@ -65,7 +70,7 @@
                 <div class="col-lg-5 col-md-12 col-sm-12 p-4 user-reviews" style="height:540px">
                     <div class="w-100" style="height:100%">
                         <img src="./comma@2x.png" class="comma-bg" alt="">
-                        <div class="content text-light px-5 py-4 text-md">
+                        <div class="content text-light text-md">
                             <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quod reprehenderit.
                                 Fugit, qui dolor? Modi, sunt hic. Quia at nam ratione accusamus doloremque culpa quidem
                                 molestiae, explicabo tenetur? Molestias, repellat?</h4>
@@ -83,7 +88,7 @@
                 <div class="col-lg-5 col-md-12 col-sm-12 p-4 user-reviews" style="height:540px">
                     <div class="w-100" style="height:100%">
                         <img src="./comma@2x.png" class="comma-bg" alt="">
-                        <div class="content text-light px-5 py-4 text-md">
+                        <div class="content text-light text-md">
                             <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quod reprehenderit.
                                 Fugit, qui dolor? Modi, sunt hic. Quia at nam ratione accusamus doloremque culpa quidem
                                 molestiae, explicabo tenetur? Molestias, repellat?</h4>
@@ -98,6 +103,7 @@
                         <img src="./comma@2x.png" class="comma-bg-btm" alt="">
                     </div>
                 </div>
+                <div class="btn-next text-center">d</div>
             </div>
         </div>
     </section>
