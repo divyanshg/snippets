@@ -65,8 +65,11 @@ body{
 
 .comma-bg-btm {
     height: 170px;
-    float: right;
-    transform: rotate(180deg) translateY(15px);
+    position: absolute;
+    bottom:20px;
+    right:20px;
+    z-index:0;
+    transform: rotate(180deg);
 }
 .card{
     padding-left:0;
@@ -82,6 +85,29 @@ body{
     width:80%;
 }
 
+.user-reviews{
+    max-height:540px;
+    text-overflow: ellipsis;
+}
+
+.user-sec{
+    padding:30px;
+}
+
+.user-sec .user-name{
+    margin-top:15px;
+    margin-left:10px;
+}
+
+.user-name h6{
+    color:#808080 !important;
+}
+
+.user-sec img{
+    width:80px;
+    height:80px;
+}
+
 @media only screen and (max-width: 600px) {
     .testimonial {
         width: 100%;
@@ -91,16 +117,12 @@ body{
     .user-reviews {
         margin-left: 0px !important;
         width: 100%;
+        height:340px !important;
     }
 
     .comma-bg,
     .comma-bg-btm {
         height: 100px;
-    }
-
-    .comma-bg-btm {
-        float: right;
-        transform: rotate(180deg) translateY(-15px);
     }
     .test-4{
         display: none;
