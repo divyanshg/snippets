@@ -76,27 +76,27 @@
         }
 
         .review-section .owl-carousel .owl-nav button.owl-next:focus,
-        .review-section .owl-carousel .owl-nav button.owl-prev:focus{
-            outline:none
+        .review-section .owl-carousel .owl-nav button.owl-prev:focus {
+            outline: none
         }
 
         .review-section .owl-carousel .owl-nav button.owl-next,
-        .review-section .owl-carousel .owl-nav button.owl-prev{
-            height:40px;
-            width:40px;
+        .review-section .owl-carousel .owl-nav button.owl-prev {
+            height: 40px;
+            width: 40px;
             display: inline-block;
             margin: 0 10px;
-            border-radius:50%;
-            color:#ffffff;
+            border-radius: 50%;
+            color: #ffffff;
             font-weight: 500;
             overflow: hidden;
             transition: all 0.5s ease;
         }
 
         .review-section .owl-carousel .owl-nav button.owl-next span,
-        .review-section .owl-carousel .owl-nav button.owl-next span{
+        .review-section .owl-carousel .owl-nav button.owl-next span {
             font-size: 40px;
-            margin-top:-13px;
+            margin-top: -13px;
             display: block;
         }
     </style>
@@ -105,52 +105,50 @@
 <body>
 
     <section class="reviews-section">
-        <div class="container">
-            <div class="row">
-                <div class="owl-carousel" id="review-carousel">
-                    <div class="col-lg-12">
-                        <div class="reviews-item text-light">
-                            <div class="review-content">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ab perferendis aut
-                                    nulla, sed officia voluptate assumenda doloribus provident deserunt magni libero
-                                    quos
-                                    facere harum tempore velit, placeat quia perspiciatis.</p>
-                            </div>
-                            <div class="user-info">
-                                <img src="./Eleanor-Galtie-black-and-white-circle-headshot.png" alt="">
-                                <h5>Elizabeth Jones</h5>
-                                <p>Carbonix</p>
-                            </div>
+        <div class="container-fluid">
+            <div class="d-flex">
+                <div class="col-lg-6">
+                    <div class="reviews-item text-light">
+                        <div class="review-content">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ab perferendis aut
+                                nulla, sed officia voluptate assumenda doloribus provident deserunt magni libero
+                                quos
+                                facere harum tempore velit, placeat quia perspiciatis.</p>
+                        </div>
+                        <div class="user-info">
+                            <img src="./Eleanor-Galtie-black-and-white-circle-headshot.png" alt="">
+                            <h5>Elizabeth Jones</h5>
+                            <p>Carbonix</p>
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="reviews-item text-light">
-                            <div class="review-content">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ab perferendis aut
-                                    nulla, sed officia voluptate assumenda doloribus provident deserunt magni libero
-                                    quos
-                                    facere harum tempore velit, placeat quia perspiciatis.</p>
-                            </div>
-                            <div class="user-info">
-                                <img src="./Eleanor-Galtie-black-and-white-circle-headshot.png" alt="">
-                                <h5>Elizabeth Jones</h5>
-                                <p>Carbonix</p>
-                            </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="reviews-item text-light">
+                        <div class="review-content">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ab perferendis aut
+                                nulla, sed officia voluptate assumenda doloribus provident deserunt magni libero
+                                quos
+                                facere harum tempore velit, placeat quia perspiciatis.</p>
+                        </div>
+                        <div class="user-info">
+                            <img src="./Eleanor-Galtie-black-and-white-circle-headshot.png" alt="">
+                            <h5>Elizabeth Jones</h5>
+                            <p>Carbonix</p>
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="reviews-item text-light">
-                            <div class="review-content">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ab perferendis aut
-                                    nulla, sed officia voluptate assumenda doloribus provident deserunt magni libero
-                                    quos
-                                    facere harum tempore velit, placeat quia perspiciatis.</p>
-                            </div>
-                            <div class="user-info">
-                                <img src="./Eleanor-Galtie-black-and-white-circle-headshot.png" alt="">
-                                <h5>Jane Doe</h5>
-                                <p>Carbonix</p>
-                            </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="reviews-item text-light">
+                        <div class="review-content">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ab perferendis aut
+                                nulla, sed officia voluptate assumenda doloribus provident deserunt magni libero
+                                quos
+                                facere harum tempore velit, placeat quia perspiciatis.</p>
+                        </div>
+                        <div class="user-info">
+                            <img src="./Eleanor-Galtie-black-and-white-circle-headshot.png" alt="">
+                            <h5>Jane Doe</h5>
+                            <p>Carbonix</p>
                         </div>
                     </div>
                 </div>
@@ -169,26 +167,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    
+
     <script src="./owl.carousel.js"></script>
     <script>
         $(document).ready(() => {
             $("#review-carousel").owlCarousel({
-                loop:true,
-                margin:0,
-                nav:true,
-                dots:false,
-                autoplay:true,
-                smartSpeed:1000,
-                responsive:{
-                    0:{
-                        items:1
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                smartSpeed: 1000,
+                responsive: {
+                    0: {
+                        items: 1
                     },
                     600: {
-                        items:2
+                        items: 2
                     },
-                    1000:{
-                        items:4
+                    1000: {
+                        items: 4
                     }
                 }
             })
