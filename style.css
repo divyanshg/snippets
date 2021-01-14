@@ -16,11 +16,13 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    cursor: pointer;
 }
 
 .testimonial {
     max-height: 350px;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 
@@ -28,19 +30,19 @@ body{
 .test-2 {
     background-image: url(./MaskGroup3@2x.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .test-3 {
     background-image: url(./MaskGroup4@2x.png);
     background-repeat: no-repeat;
-    background-size: contain
+    background-size: cover
 }
 
 .test-4 {
     background-image: url(./MaskGroup5@2x.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height:auto;
     margin-top:-20px;
 }
@@ -50,7 +52,7 @@ body{
 }
 
 .testimonial-left .testimonial-card-body {
-    padding-top: 40%;
+    padding-top: 34%;
     width: 100%;
 }
 
@@ -78,7 +80,9 @@ body{
 .testimonial-card-body{
     padding-top:20%;
     padding-right:0;
-    background-color: #1a131342;
+    background-color:#1a13139e;
+    transition:all 0.5s ease;
+    opacity: 0;
 }
 
 .testimonial-card-body .card-text{
@@ -138,6 +142,30 @@ body{
     height:80px;
 }
 
+.sm-sc {
+    display: none !important;
+}
+
+.sm-testimonial {
+    width: 50% !important;
+    height: 160px !important;
+    display: none;
+}
+
+.sm-testimonial .testimonial-card-body,
+.sm-sc .testimonial .testimonial-card-body {
+    padding-top: 7%;
+    padding-left: 5px;
+}
+
+.sm-testimonial .testimonial-card-body a h4 {
+    font-size: 16px;
+}
+
+.sm-testimonial .testimonial-card-body .card-text {
+    width: 100%;
+}
+
 @media (max-width: 1200px) {
    .user-reviews {
        margin-left: 6% !important;
@@ -169,7 +197,7 @@ body{
     }
 
     .user-reviews div .content h4{
-        font-size:10px;
+        font-size:18px;
      }
 
      .user-sec img {
@@ -179,7 +207,7 @@ body{
 
      .comma-bg,
      .comma-bg-btm {
-         height: 50px !important;
+         height: 70px !important;
      }
 
      .comma-bg-btm {
@@ -196,8 +224,60 @@ body{
      }
 
      .user-sec .user-name h5, h6{
-        font-size: 10px;
+        font-size: 14px;
     } 
+}
+
+@media (min-width: 800px) {
+    .sm-sc {
+        display: none !important;
+    }
+
+    .sm-sc .testimonial {
+        display: none !important;
+    }
+
+    .sm-testimonial {
+        display: none !important;
+    }
+
+    .lg-sc {
+        display: block !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .testimonial-left{
+        width: 100% !important;
+    }
+    .sm-sc {
+        display: flex !important;
+    }
+    
+    .sm-sc .testimonial h5 {
+        font-size: 26px !important;
+    }
+
+    .sm-sc .sm-testimonial h5{
+        font-size:24px !important;
+        line-height: 35px;
+    }
+
+    .sm-sc .testimonial{
+        height:240px !important;
+    }
+
+    .sm-sc .testimonial .testimonial-card-body {
+        padding-left:20px !important;
+    }
+
+    .sm-testimonial {
+        height: 260px !important;
+        display: block;
+    }
+    .lg-sc {
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
@@ -212,11 +292,9 @@ body{
         right: 2%;
     }
     .comma-bg-btm {
-        bottom: -10px;
+        bottom: -70px;
     }
 }
-
-
 
 @media only screen and (max-width: 600px) {
     .testimonial {
@@ -226,23 +304,28 @@ body{
 
     .user-reviews {
         margin-left: 0px !important;
-        width: 100% !important;
-        height:340px !important;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .sm-sc{
+        display: flex !important;
+    }
+
+    .sm-testimonial{
+        display: block;
     }
 
     .comma-bg,
     .comma-bg-btm {
         height: 100px;
     }
-    .test-4{
+    .lg-sc{
         display: none;
     }
     .testimonial-image-1{
         height:auto;
         background-position: center;
-    }
-    .test-3{
-        margin-top:-60px;
     }
     .testimonial-card-body{
         padding-top:10%;
@@ -254,4 +337,12 @@ body{
         padding-top: 60%;
         width: 100%;
     }
+}
+
+/* Product testimonial hover */
+.testimonial-left:hover>.testimonial-card-body {
+    opacity: 1;
+}
+.testimonial:hover > .testimonial-card-body{
+    opacity:1;
 }
