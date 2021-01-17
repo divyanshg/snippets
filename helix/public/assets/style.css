@@ -381,6 +381,29 @@ body {
         padding-top: 60%;
         width: 100%;
     }
+
+    .trustUs{
+        margin-top:700px;
+    }
+
+    .trustUs .trustBody{
+        text-align: center;
+    }
+    .trustBody h1{
+        font-size: 40px !important;
+    }
+
+    .trustBody p{
+        width:100% !important;
+    }
+}
+
+.features{
+    height:200px;
+    width:100%;
+    margin-top:300px;
+    background-color: #1F1F1F;
+    border-color: #707070;
 }
 
 /* Product testimonial hover */

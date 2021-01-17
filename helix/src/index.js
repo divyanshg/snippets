@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import TrustUs from './components/trustUs';
+import Features from './components/features';
 import UserTestimonial from './components/userTestimonial';
 import ProductTestimonial from './components/productTestimonial';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <UserTestimonial />
+     <UserTestimonial />
     <ProductTestimonial />
+    <Features />
+    <TrustUs />
   </React.StrictMode>,
   document.getElementById('root')
 );
